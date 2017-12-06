@@ -1,0 +1,16 @@
+2> $tempfile
+
+retval=$?
+
+choice=`cat $tempfile`
+
+case $retval in
+  0)
+    echo "$choice" > choice_temp.txt;;
+  1)
+    echo "Cancel pressed.";;
+  255)
+    echo "ESC pressed.";;
+esac
+
+	clear

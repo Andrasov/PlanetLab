@@ -1,0 +1,25 @@
+
+SSH_TEST () {
+
+
+	Time_a=$(($(date +%s%N)/1000000))
+   
+    ssh -q\
+    	-o "PreferredAuthentications=publickey"\
+    	-o "PasswordAuthentication=no"\
+    	-o "ConnectTimeout=20"\
+    	-o "UserKnownHostsFile=/dev/null"\
+    	-o "StrictHostKeyChecking=no"\
+    	-i $ssh_key $sl_name@$1 exit
+
+
+			if [ $? -eq 0 ]; then
+
+         		Time_b=$(($(date +%s%N)/1000000))
+         		ssh_time=`expr $Time_b - $Time_a`
+        
+ 			else
+        		ssh_time=-1
+ 			fi
+ping_avg=-1
+}

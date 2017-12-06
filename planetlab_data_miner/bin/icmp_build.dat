@@ -1,0 +1,20 @@
+
+PING_TEST () {
+
+	IP=$(nslookup $1 | awk '/^Address: / { print $2 ; exit }')
+
+	if [[ -z "$IP" ]]; then
+		ping_avg=-1
+	else	
+
+	ping -c 1 $IP > /dev/null
+
+		if [ $? -eq 0 ]; then
+
+			ping_avg=$(ping -c 3 $IP | tail -1| awk '{print $4}' | cut -d '/' -f 2)
+
+		else
+			ping_avg=-1
+		fi	
+	fi
+}

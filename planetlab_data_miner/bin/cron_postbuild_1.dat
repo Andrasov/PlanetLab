@@ -1,0 +1,18 @@
+NOW=$(date +"%Y-%m-%d")
+LOGFILE="logs/log-$NOW.log"
+
+OUTPUT_WRITE () {
+
+	echo "$1 $ping_avg -1" >> "$LOGFILE"
+
+}
+
+
+
+for i in $(cat $(find -type f -name "*.node") | awk 'NR>1 {print$3}') 
+  do
+  
+  	PING_TEST $i
+  	#SSH_TEST $i
+  	OUTPUT_WRITE $i
+done

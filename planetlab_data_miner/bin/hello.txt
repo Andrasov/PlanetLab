@@ -1,0 +1,11 @@
+Hello, this is your first time running this program, please be advised that for proper run of this program you need following dependencies:
+
+fping
+pssh
+python 3 
+
+python packages:
+folium 
+pandas
+vincent
+numpy
