@@ -9,9 +9,3 @@ Thesis deals with measurement of transfer parameters for nodes in experimental n
 
 **-script for scraping plaentlab.eu was removed due to licensing issiues, it is part of the bachelor thesis of Ing. Ilko witch can be found on vutbr.cz site**
 
-****Main menu
-![]({{site.baseurl}}/https://ctrlv.sk/oGne)
-****Node Menu
-![]({{site.baseurl}}/https://ctrlv.sk/oenh)
-****Generated map
-![]({{site.baseurl}}/https://ctrlv.sk/7KU3)
