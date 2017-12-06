@@ -11,8 +11,6 @@ Thesis deals with measurement of transfer parameters for nodes in experimental n
 
 ****Main menu
 ![]({{site.baseurl}}/https://ctrlv.sk/oGne)
-
-
 ****Node Menu
 ![]({{site.baseurl}}/https://ctrlv.sk/oenh)
 ****Generated map
